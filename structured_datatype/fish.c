@@ -3,16 +3,27 @@
 /* a c program that prints uses structured data types to store and display informations about a fish */
 
 	typedef struct{
-        const char *ingredient;                                                float weight;
-        }meal;
+	const char *ingredient;
+	float weight;
+	}meal;
 
         typedef struct{
-        const char *description;
-        float duration;                                                        }exercise;
+	const char *description;
+	float duration;
+	}exercise;
 
-        typedef struct{
-        meal food;                                                             exercise exercise;                                                     }preference;                                                                                                                                  typedef struct{
-        const char *name;                                                      const char *specie;                                                    int age;                                                               int teeth;                                                             preference care;                                                       }fish;
+	typedef struct{
+	meal food;
+	exercise exercise;
+	}preference;
+
+	typedef struct{
+	const char *name;
+	const char *specie;
+	int age;
+	int teeth;
+	preference care;
+	}fish;
 
 void label(fish a);
 
